@@ -1,31 +1,27 @@
-# Ambilight
+# Ambilight Server Automation
 
 Modified: 2022-01
 
-## Access
-Server hosted on
-```
-http://$PI_IP:8090
+Ansible automation for setup and teardown of hyperion servers for raspbian lite.
+
+## Quickstart
+
+Install ansible
+```bash
+python3 -m pip install ansible
 ```
 
-## Configuration
- - Enable Internet API Access
- - Enable capture card source
-
-
-## Hyperiond
-Hyperion needs to run as root to have access to the PWM interface. Probably could find a more perm solution to this but for now:
-```
-sudo systemctl disable --now hyperion@pi
-sudo systemctl enable --now hyperion@root
+Run the prelink directive passing the hostname and ip address of the pi. On rasbian the default hostname is `pi`.
+```bash
+./scripts/prelink.sh -u $HOSTNAME -a $IP_ADDRESS
 ```
 
-Got locked out once:
+Run the automation
+```bash
+ansible-playbook main.yaml
 ```
-sudo systemctl stop hyperion
-hyperiond -v --resetPassword
-sudo systemctl restart hyperion
-...
+
+Teardown
+```bash
+ansible-playbook main.yaml
 ```
-## LED Interface
-Uses WS281x PWM inteface (one wire) on GPIO18.
