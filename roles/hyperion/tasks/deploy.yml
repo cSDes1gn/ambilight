@@ -21,6 +21,7 @@
 
 # restart service as the root user
 - name: Disable systemd unit @ pi user
+  become: true
   systemd:
     name: hyperion@pi.service
     state: stopped
