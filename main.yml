@@ -29,7 +29,7 @@
         name:
           - hyperion
         state: latest
-    
+
     - name: verify hyperiond service
       service:
         name: hyperion@root.service
