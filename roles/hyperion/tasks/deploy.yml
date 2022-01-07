@@ -2,8 +2,8 @@
 - name: Add hyperion apt gpg key
   become: true
   apt_key:
-    url: {{ apt_key_url }}/hyperion.pub.key
-    keyring: {{ keyring }}
+    url: "{{ apt_key_url }}/hyperion.pub.key"
+    keyring: "{{ keyring }}"
     state: present
 
 - name: Add hyperion repository
@@ -14,6 +14,11 @@
         {{ apt_key_url }}/ {{ ansible_distribution_release | lower }} main
     state: present
 
+- name: Install hyperion
+  become: true
+  apt:
+    name: hyperion
+    
 # restart service as the root user
 - name: Disable systemd unit @ pi user
   systemd:
@@ -22,6 +27,7 @@
     enabled: false
 
 - name: Enable systemd unit @ root user
+  become: true
   systemd:
     name: hyperion@root.service
     state: started
