@@ -28,6 +28,12 @@ This essentially just adds your host systems public key to the list of authorize
 >./scripts/prelink.sh -u $HOSTNAME -a $IP_ADDRESS -p $SSH_KEYPATH
 >```
 
+Create an inventory file from the example to describe automation targets:
+```bash
+cp inventory/example.inventory.yaml inventory/inventory.yaml
+```
+>Be sure to update the host and target ip.
+
 ### Automation
 Run hyperion server deployment automation:
 ```bash
