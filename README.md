@@ -24,12 +24,12 @@ This essentially just adds your host systems public key to the list of authorize
 >./scripts/prelink.sh -u $HOSTNAME -a $IP_ADDRESS -p $SSH_KEYPATH
 >```
 
-Run the automation
+Run deployment automation
 ```bash
-ansible-playbook main.yaml -K
+ansible-playbook main.yml -e '{ teardown: False }' -K
 ```
 
 Teardown
 ```bash
-ansible-playbook main.yaml
+ansible-playbook main.yml -e '{ teardown: True }' -K
 ```
