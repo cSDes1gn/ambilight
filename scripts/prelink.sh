@@ -12,11 +12,13 @@ OKB="\033[94m"
 UDL="\033[4m"
 NC="\033[0m"
 
+set -e
+
 PRELINK_USER=""
 PRELINK_IP=""
 KEY_PATH="$HOME/.ssh/id_rsa.pub"
 
-while getopts ":hu:a:p" opt; do
+while getopts ":hu:a:p:" opt; do
     case "$opt" in
         h )
             echo "Usage:"
@@ -61,6 +63,6 @@ handler() {
     exit "$1"
 }
 
-printf "%b" "${OKB}Appending local public key to $PRELINK_USER@$PRELINK_IP:/.ssh/authorized_keys${NC}\n"
+printf "%b" "${OKB}Appending local public key ${OKG}$KEY_PATH${OKB} to ${OKG}$PRELINK_USER@$PRELINK_IP:/.ssh/authorized_keys${NC}\n"
 ssh "$PRELINK_USER"@"$PRELINK_IP" "mkdir -p ~/.ssh && echo $PRELINK_KEY >> ~/.ssh/authorized_keys"
 printf "%b" "${OKG} ✓ ${NC} complete\n"
