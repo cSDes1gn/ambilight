@@ -37,3 +37,10 @@
   service:
     name: hyperion@root.service
     state: started
+
+- name: Validate connection to hyperion servers
+  wait_for:
+    host: "{{ ansible_host }}"
+    port: 8090
+    timeout: 30
+    active_connection_states: ESTABLISHED
