@@ -20,7 +20,9 @@
     - name: Add hyperion repository
       become: true
       apt_repository:
-        repo: "deb [signed-by=/usr/share/keyrings/hyperion.pub.gpg] https://apt.hyperion-project.org/ $(lsb_release -cs) main"
+        repo: >
+          deb [signed-by=/usr/share/keyrings/hyperion.pub.gpg]
+           https://apt.hyperion-project.org/ $(lsb_release -cs) main
         state: present
 
     - name: Install hyperion
