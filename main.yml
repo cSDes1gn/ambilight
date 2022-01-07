@@ -1,4 +1,7 @@
 ---
+# Hyperion Build Server Deployment and Teardown
+# ---------------------------------------------
+
 - name: Setup Hyperion Server
   hosts: hyperion
   pre_tasks:
@@ -10,29 +13,5 @@
         update_cache: true
         cache_valid_time: 3600
 
-  tasks:
-    - name: Add hyperion apt gpg key
-      become: true
-      apt_key:
-        url: https://apt.hyperion-project.org/hyperion.pub.key
-        state: present
-
-    - name: Add hyperion repository
-      become: true
-      apt_repository:
-        repo: >
-          deb [signed-by=/usr/share/keyrings/hyperion.pub.gpg]
-           https://apt.hyperion-project.org/ $(lsb_release -cs) main
-        state: present
-
-    - name: Install hyperion
-      become: true
-      apt:
-        name:
-          - hyperion
-        state: latest
-
-    - name: verify hyperiond service
-      service:
-        name: hyperion@root.service
-        state: started
+  roles:
+    - hyperion

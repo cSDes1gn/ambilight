@@ -1,0 +1,6 @@
+---
+# build or destroy task branch
+- include_tasks: deploy.yml
+  when: not teardown
+- include_tasks: teardown.yml
+  when: teardown
