@@ -11,15 +11,18 @@ FAIL="\033[91m"
 OKB="\033[94m"
 UDL="\033[4m"
 NC="\033[0m"
+
 PRELINK_USER=""
 PRELINK_IP=""
+KEY_PATH="$HOME/.ssh/id_rsa.pub"
 
-while getopts ":hu:a:" opt; do
+while getopts ":hu:a:p" opt; do
     case "$opt" in
         h )
             echo "Usage:"
-            echo "      prelink.sh -h                       Display this message"
-            echo "      prelink -u ubuntu -a 10.1.52.98     Setup ssh link for user ubuntu on host 10.1.52.98"
+            echo "      prelink.sh -h                                           Display this message"
+            echo "      prelink -u ubuntu -a 10.1.52.98                         Setup ssh link for user ubuntu on host 10.1.52.98"
+            echo "      prelink -u ubuntu -a 10.1.52.98 -p ~/.ssh/id_rsa.pub    Specify public key path"
             exit 0;
             ;;
         u )
@@ -27,6 +30,9 @@ while getopts ":hu:a:" opt; do
             ;;
         a )
             PRELINK_IP="$OPTARG"
+            ;;
+        p )
+            KEY_PATH="$OPTARG"
             ;;
         \? )
             echo "Invalid option: $OPTARG" 1>&2
@@ -47,7 +53,6 @@ if [ -z "$PRELINK_USER" ] || [ -z "$PRELINK_IP" ]; then
 fi
 
 # prelink config
-KEY_PATH="$HOME/.ssh/id_rsa.pub"
 PRELINK_KEY=$(< "$KEY_PATH")
 trap 'handler $?' ERR
 
