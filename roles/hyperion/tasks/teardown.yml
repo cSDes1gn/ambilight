@@ -22,7 +22,7 @@
   apt_key:
     url: "{{ apt_key_url }}/hyperion.pub.key"
     keyring: "{{ keyring }}"
-    state: absent 
+    state: absent
 
 - name: Remove hyperion repository
   become: true
@@ -31,4 +31,3 @@
       deb [signed-by={{ keyring }}]
         {{ apt_key_url }}/ {{ ansible_distribution_release | lower }} main
     state: absent
-

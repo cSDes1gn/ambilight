@@ -18,7 +18,7 @@
   become: true
   apt:
     name: hyperion
-    
+
 # restart service as the root user
 - name: Disable systemd unit @ pi user
   systemd:
