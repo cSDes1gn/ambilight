@@ -18,7 +18,7 @@ Run the prelink directive passing the hostname and ip address of the pi. On rasb
 
 Run the automation
 ```bash
-ansible-playbook main.yaml
+ansible-playbook main.yaml -K
 ```
 
 Teardown
