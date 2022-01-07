@@ -4,10 +4,14 @@
 
 Modified: 2022-01
 
+![Hyperion](docs/logo_dark.png#gh-dark-mode-only)
+![Hyperion](docs/logo_light.png#gh-light-mode-only)
+
 Ansible automation for setup and teardown of hyperion servers for raspbian lite.
 
 ## Quickstart
 
+### Setup
 Install ansible
 ```bash
 python3 -m pip install ansible
@@ -24,12 +28,13 @@ This essentially just adds your host systems public key to the list of authorize
 >./scripts/prelink.sh -u $HOSTNAME -a $IP_ADDRESS -p $SSH_KEYPATH
 >```
 
-Run deployment automation
+### Automation
+Run hyperion server deployment automation:
 ```bash
 ansible-playbook main.yml -e '{ teardown: False }' -K
 ```
 
-Teardown
+And teardown:
 ```bash
 ansible-playbook main.yml -e '{ teardown: True }' -K
 ```
