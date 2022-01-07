@@ -1,5 +1,5 @@
 ---
-# Ambilight host 
+# Ambilight host
 srv:
   hosts:
     hyperion:
