@@ -4,7 +4,6 @@
   pre_tasks:
     # apt housekeeping
     - name: Update and upgrade apt packages
-      become: true
       apt:
         upgrade: true
         update_cache: true
@@ -12,19 +11,16 @@
 
   tasks:
     - name: Add hyperion apt gpg key
-      become: true
       apt_key:
         url: https://apt.hyperion-project.org/hyperion.pub.key
         state: present
-    
+
     - name: Add hyperion repository
-      become: true
       apt_repository:
         repo: "deb [signed-by=/usr/share/keyrings/hyperion.pub.gpg] https://apt.hyperion-project.org/ $(lsb_release -cs) main"
         state: present
 
     - name: Install hyperion
-      become: true
       apt:
         name:
           - hyperion
