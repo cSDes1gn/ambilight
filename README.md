@@ -44,3 +44,6 @@ And teardown:
 ```bash
 ansible-playbook main.yml -e '{ teardown: True }' -K
 ```
+
+## License
+Free to use through the [MIT License](LICENSE)
