@@ -31,4 +31,4 @@ jobs:
         run: sudo apt install ansible -y
       - name: Run ansible-playbook linter.
         run: |
-          ansible-playbook main.yaml --syntax-check
+          ansible-playbook main.yml --syntax-check
