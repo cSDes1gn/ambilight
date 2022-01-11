@@ -45,3 +45,23 @@ Therefore there are a few options that can be done to mitigate this problem:
 - [ ] Increase the PSU specification and add voltage regulator for pi
 - [ ] Add dual USB 3.0 driver cable to support external power requirements for the capture card
 - [ ] Increase the PSU specification
+
+### Power Consumption
+You can check how much power is negotiated for the 4K capture card device (`1e4e:7103`) using `lsusb`:
+```
+pi@raspberrypi:~ $ lsusb -v|egrep "^Bus|MaxPower"
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+    MaxPower                0mA
+Bus 001 Device 023: ID 1e4e:7103 Cubeternet 
+    MaxPower              150mA
+Couldn't open device, some information will be missing
+Couldn't open device, some information will be missing
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+    MaxPower              100mA
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+    MaxPower                0mA
+```
+
+This is way below the 1.2A USB power budget for the RPi4 Model B. Therefore there is no power compatibility problem between the capture card and the RPi4.
