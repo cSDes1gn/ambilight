@@ -14,6 +14,11 @@
         {{ apt_key_url }}/ {{ ansible_distribution_release | lower }} main
     state: present
 
+- name: Update apt packages with new apt repository
+  become: true
+  apt:
+    update: true
+
 - name: Install hyperion
   become: true
   apt:
