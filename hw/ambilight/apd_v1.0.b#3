@@ -858,8 +858,9 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="D1" pad="C"/>
 <contactref element="R3" pad="2"/>
-<wire x1="11.342" y1="21.59" x2="11.342" y2="23.268" width="0.2032" layer="1"/>
-<wire x1="11.342" y1="23.268" x2="11.442" y2="23.368" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.791715625" x2="11.342" y2="21.59" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.69" x2="11.342" y2="21.59" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.791715625" x2="11.442" y2="23.368" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LVREF">
 <contactref element="R1" pad="1"/>

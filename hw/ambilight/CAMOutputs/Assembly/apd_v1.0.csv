@@ -1,0 +1,13 @@
+"Part";"Value";"Device";"Package";"Description";"PROD_ID";"SF_ID";"SF_SKU";"VALUE";
+"C1";"1mF";"1000UF-RADIAL-5MM-25V-20%";"CPOL-RADIAL-5MM-10MM";"1,000µF/1mF ceramic capacitors";"CAP-09538";"";"";"1mF";
+"D1";"RED";"LED-RED0603";"LED-0603";"Red SMD LED";"DIO-00819";"";"";"RED";
+"FRAME1";"FRAME-LETTER";"FRAME-LETTER";"CREATIVE_COMMONS";"Schematic Frame - Letter";"";"";"";"";
+"LLC";"";"CONN_03POLAR";"MOLEX-1X3";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"CONN-08625";"PRT-08096";"";"";
+"PWR";"";"CONN_025MM";"SCREWTERMINAL-5MM-2";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"";"";"PRT-08432";"";
+"Q1";"220mA/50V/3.5Ω";"MOSFET-NCH-BSS138";"SOT23-3";"N-channel MOSFETs";"TRANS-00830";"";"";"220mA/50V/3.5Ω";
+"R1";"10k";"10KOHM-0603-1/10W-1%";"0603";"10kΩ resistor";"RES-00824";"";"";"10k";
+"R2";"10k";"10KOHM-0603-1/10W-1%";"0603";"10kΩ resistor";"RES-00824";"";"";"10k";
+"R3";"220";"220OHM-0603-1/10W-1%";"0603";"220Ω resistor";"RES-07861";"";"";"220";
+"RPI_PWR";"USB_A_SMT_FEMALE";"USB_A_SMT_FEMALE";"USB-A-S-SILK-FEMALE";"USB-A Connector";"CONN-09520";"PRT-09011";"";"";
+"SPL_PWR";"USB_A_SMT_FEMALE";"USB_A_SMT_FEMALE";"USB-A-S-SILK-FEMALE";"USB-A Connector";"CONN-09520";"PRT-09011";"";"";
+"WS281X";"";"CONN_03POLAR";"MOLEX-1X3";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"CONN-08625";"PRT-08096";"";"";

@@ -194,13 +194,12 @@
 <text x="19.431" y="6.858" size="0.6096" layer="21" font="vector" ratio="20" rot="R90">PWM OUT</text>
 <text x="16.764" y="6.858" size="0.6096" layer="21" font="vector" ratio="20" rot="R90">5V</text>
 <text x="14.097" y="6.858" size="0.6096" layer="21" font="vector" ratio="20" rot="R90">GND</text>
-<text x="12.954" y="17.907" size="2" layer="21" font="vector" ratio="20">Ambilight Driver</text>
-<text x="24.003" y="16.383" size="1" layer="21" font="vector" ratio="20">2022-01 v0.1</text>
+<text x="13.716" y="17.907" size="2" layer="21" font="vector" ratio="20">Ambilight Driver</text>
+<text x="24.765" y="16.383" size="1" layer="21" font="vector" ratio="20">2022-01 v0.1</text>
 <wire x1="0" y1="37.719" x2="0" y2="0" width="0.2032" layer="20"/>
 <wire x1="0" y1="37.719" x2="46.101" y2="37.719" width="0.2032" layer="20"/>
 <wire x1="46.101" y1="37.719" x2="46.101" y2="0" width="0.2032" layer="20"/>
 <wire x1="46.101" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
-<text x="30.099" y="14.859" size="1" layer="21" font="vector" ratio="20">ztnel</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -858,8 +857,9 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="D1" pad="C"/>
 <contactref element="R3" pad="2"/>
-<wire x1="11.342" y1="21.59" x2="11.342" y2="23.268" width="0.2032" layer="1"/>
-<wire x1="11.342" y1="23.268" x2="11.442" y2="23.368" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.791715625" x2="11.342" y2="21.59" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.69" x2="11.342" y2="21.59" width="0.2032" layer="1"/>
+<wire x1="11.442" y1="21.791715625" x2="11.442" y2="23.368" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LVREF">
 <contactref element="R1" pad="1"/>

@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-01-12T08:56:25Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "apd_v1.0"
+        },
+        "Owner": "Christian Sargusingh <christian@leapsystems.online>",
+        "Size": {
+            "X": 46.101,
+            "Y": 37.719
+        }
+    }
+}
