@@ -4238,7 +4238,7 @@ CAP-08070</description>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="LLC" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="POLAR" package3d_urn="urn:adsk.eagle:package:38064/1"/>
+<part name="LLC" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="POLAR" package3d_urn="urn:adsk.eagle:package:38064/1" override_package3d_urn="urn:adsk.eagle:package:36077519/2" override_package_urn="urn:adsk.eagle:footprint:37679/1"/>
 <part name="WS281X" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="POLAR" package3d_urn="urn:adsk.eagle:package:38064/1" override_package3d_urn="urn:adsk.eagle:package:36077516/2" override_package_urn="urn:adsk.eagle:footprint:37679/1"/>
 <part name="PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="5MM" package3d_urn="urn:adsk.eagle:package:38044/1" override_package3d_urn="urn:adsk.eagle:package:36077469/2" override_package_urn="urn:adsk.eagle:footprint:37660/1"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
