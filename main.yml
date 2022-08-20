@@ -2,16 +2,7 @@
 # Hyperion Build Server Deployment and Teardown
 # ---------------------------------------------
 
-- name: Setup Hyperion Server
+- name: Hyperion Server
   hosts: hyperion
-  pre_tasks:
-    # apt housekeeping
-    - name: Update and upgrade apt packages
-      become: true
-      apt:
-        upgrade: true
-        update_cache: true
-        cache_valid_time: 3600
-
   roles:
     - hyperion
