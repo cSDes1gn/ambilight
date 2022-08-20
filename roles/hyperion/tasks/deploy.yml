@@ -1,4 +1,11 @@
 ---
+- name: Update and upgrade apt packages
+  become: true
+  apt:
+    upgrade: true
+    update_cache: true
+    cache_valid_time: 3600
+
 - name: Add hyperion apt gpg key
   become: true
   apt_key:
@@ -25,10 +32,10 @@
     name: hyperion
 
 # restart service as the root user
-- name: Disable systemd unit @ pi user
+- name: Disable systemd unit @ {{ ansible_user_id }} user
   become: true
   systemd:
-    name: hyperion@pi.service
+    name: hyperion@{{ ansible_user_id }}.service
     state: stopped
     enabled: false
 
