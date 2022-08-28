@@ -22,4 +22,7 @@ APDv1 PCB,JLCPCB,JLCPCB,1,CA$3.07,CA$3.07
 System Enclosure,-,-,1,,0
 1.8mm APD Standoffs,-,-,3,,0
 3.5mm RPI Standoffs,-,-,4,,0
-,,,,,179.622
+M2 8mm Screw,PGMJ,Amazon,3,,0
+M3 8mm Screw,PGMJ,Amazon,4,,0
+M3 16mm Screw,PGMJ,Amazon,3,,0
+,,,,,CA$179.62
