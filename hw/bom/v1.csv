@@ -1,0 +1,26 @@
+Ambilight V1 BOM
+Item,Manufacturer,Supplier,Quantity,Unit Price,Net Price
+5m 60LEDS/m WS2812B RGB 5050SMD LED Strip,BTF-LIGHTING,Amazon,1,CA$50.99,CA$50.99
+5V 20A Switching PSU,Aclorol,Amazon,1,CA$24.39,CA$24.39
+RPi 3B/4 Zero,RaspberryPi,Amazon,1,CA$60.00,CA$60.00
+HDMI Capture Card USB (MS2109),-,Amazon,1,CA$15.99,CA$15.99
+15A 250V Power Rocker Switch,BZ 3D,Amazon,1,CA$11.99,CA$11.99
+12 Pack Hook Loop Tape,EOTW,Amazon,1,CA$13.19,CA$13.19
+Heatshrink,,Amazon,,,0
+24 AWG Wire,,Amazon,,,0
+18 AWG Wire,,Amazon,,,0
+2.54mm Dupont Female Crimps,,Amazon,5,,0
+2.54mm Dupont Female Covers ,,Amazon,5,,0
+1mF Electrolytic Capacitor,,,1,,0
+0603 LED,,,1,,0
+0603 330R Resistor,,,1,,0
+0603 10K Resistor,,,2,,0
+BSS138 MOSFET,,Amazon,1,,0
+USB 2.0 Female SMD Connector,,Amazon,2,,0
+JST .54mm JST-XH 3 Pin Male Connectors,,Amazon,2,,0
+JST .54mm JST-XH 3 Pin Female Connectors,,Amazon,2,,0
+APDv1 PCB,JLCPCB,JLCPCB,1,CA$3.07,CA$3.07
+System Enclosure,-,-,1,,0
+1.8mm APD Standoffs,-,-,3,,0
+3.5mm RPI Standoffs,-,-,4,,0
+,,,,,179.622

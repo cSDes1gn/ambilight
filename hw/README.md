@@ -1,3 +1,3 @@
-# Hardware Files
+# Ambilight Hardware
 
-Ambilight Power Driver hardware files.
+Ambilight BOM, Power Driver and Enclosure hardware files.
